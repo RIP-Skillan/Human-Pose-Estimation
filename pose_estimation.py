@@ -52,7 +52,6 @@ def poseDectector(frame):
         if points[idFrom] and points[idTo]:
             cv2.line(frame, points[idFrom], points[idTo], (0,255,0), 3)
             cv2.ellipse(frame, points[idFrom], (3,3), 0, 0, 360, (0, 0, 255), cv2.FILLED)
-            
             cv2.ellipse(frame, points[idTo], (3,3), 0, 0, 360, (0, 0, 255), cv2.FILLED)
     
     t, _ =net.getPerfProfile()
